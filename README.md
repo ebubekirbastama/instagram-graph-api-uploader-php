@@ -1,3 +1,4 @@
+
 🚀 Instagram Graph API Uploader (PHP)
 ====================================
 
@@ -69,23 +70,23 @@ $bot-&gt;uploadSingle("image", "https://example.com/photo.jpg", "Deneme fotoğra
 
 
 ### 🔸 CSV'den Toplu Yükleme
-$bot->uploadFromCSV("media_list_sample.csv");
+$bot->uploadFromCSV("media_list_sample.csv");<br>
 
-CSV Formatı:
-type,url,caption
-image,https://example.com/photo1.jpg,Deneme fotoğrafı
-video,https://example.com/video.mp4,Harika bir video!
+CSV Formatı:<br>
+type,url,caption<br>
+image,https://example.com/photo1.jpg,Deneme fotoğrafı<br>
+video,https://example.com/video.mp4,Harika bir video!<br>
 
 ---
 
 ⚙️ Örnek `ayarlar.txt`
-app_id=4535343535
-app_secret=54354354543354
-short_token=EAAGm0PX4ZCpsBAJZBZA2...
-access_token=
-api_version=v21.0
-poll_interval=5
-timeout=600
+app_id=4535343535<br>
+app_secret=54354354543354<br>
+short_token=EAAGm0PX4ZCpsBAJZBZA2... <br>
+access_token=<br>
+api_version=v21.0 <br>
+poll_interval=5 <br>
+timeout=600<br>
 
 ---
 
