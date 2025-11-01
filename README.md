@@ -42,15 +42,31 @@ php examples/single_upload_example.php
 📚 Kullanım
 -----------
 ### 🔸 Tekli Yükleme
-require_once "src/InstagramUploader.php";
+<pre>
+<code class="language-php">
+&lt;?php
+require_once "InstagramUploader.php";
 
 $bot = new InstagramUploader();
-$bot->APP_ID       = "123456789";
-$bot->APP_SECRET   = "YOUR_APP_SECRET";
-$bot->SHORT_TOKEN  = "YOUR_SHORT_TOKEN";
 
-$bot->refreshTokenIfNeeded();
-$bot->uploadSingle("image", "https://example.com/image.jpg", "Merhaba Instagram!");
+// Token ve ID bilgilerini manuel ver
+$bot-&gt;APP_ID       = "4535343535";
+$bot-&gt;APP_SECRET   = "54354354543354";
+$bot-&gt;SHORT_TOKEN  = "kisa_tokenin_buraya";
+$bot-&gt;ACCESS_TOKEN = "uzun_tokenin_buraya"; // isteğe bağlı
+
+// Token yenileme işlemi
+$bot-&gt;refreshTokenIfNeeded();
+
+// Tekli yükleme örneği
+$bot-&gt;uploadSingle("image", "https://example.com/photo.jpg", "Deneme fotoğrafı!");
+
+// CSV'den çoklu yükleme örneği
+// $bot-&gt;uploadFromCSV("medya_listesi.csv");
+?&gt;
+</code>
+</pre>
+
 
 ### 🔸 CSV'den Toplu Yükleme
 $bot->uploadFromCSV("media_list_sample.csv");
